@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+ 	console.log('j');
+	console.log('f');
+	jQuery.ajax({
+		url: 'DESIRED URL HERE',
+		username:'USERNAME or API KEY', 
+		password:'PASSWORD or X',
+		type: 'GET',    		
+		success: function(data){
+			console.log(data);
+		},
+		error: function(data){
+			console.log('ERROR');
+			console.log(data);
+		}
+	});
+ 
+    </script>
+</body>
+</html>
